@@ -1,0 +1,180 @@
+/* إعدادات الصفحة */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f8;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* عنوان النظام */
+.main-title {
+    text-align: center;
+    color: #1e3a5f;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 25px 0 35px;
+}
+
+/* الصناديق الرئيسية */
+.box {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* العناوين */
+h2 {
+    color: #222;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* مجموعة الحقول */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* أسماء الحقول */
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* خانات الإدخال */
+input {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1677e8;
+}
+
+/* مربع رسالة الخطأ */
+#errorBox {
+    display: none;
+    background-color: #ffe5e5;
+    color: #d00000;
+    border: 2px solid #d00000;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* إظهار مربع الخطأ عند وجود رسالة */
+#errorBox:not(:empty) {
+    display: block;
+}
+
+/* الأزرار */
+button {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 10px;
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+/* زر إضافة طالب */
+.add-btn {
+    background-color: #1677e8;
+}
+
+.add-btn:hover {
+    background-color: #095fc4;
+}
+
+/* زر لجنة الرأفة */
+.mercy-btn {
+    background-color: #198754;
+}
+
+.mercy-btn:hover {
+    background-color: #146c43;
+}
+
+/* كروت الطلاب */
+.student-card {
+    background-color: #d1f3fa;
+    border: 2px solid #a5e8f2;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* كروت تقرير الرأفة */
+.mercy-card {
+    background-color: #fff3cd;
+    border: 2px solid #ffe08a;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* عناوين الكروت */
+.student-card h3,
+.mercy-card h4 {
+    margin-top: 0;
+    color: #1e3a5f;
+}
+
+/* الموبايل */
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .main-title {
+        font-size: 25px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 17px;
+    }
+
+    button {
+        font-size: 19px;
+    }
+}
